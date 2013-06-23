@@ -29,7 +29,7 @@ public class FragmentPensamiento extends SherlockFragment {
         TextView texto = (TextView) pensamiento_view.findViewById(R.id.pensamiento_cuerpo);
         texto.setText(pensamiento);
 
-        return texto;
+        return pensamiento_view;
 
     }
 }

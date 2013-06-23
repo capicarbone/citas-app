@@ -24,6 +24,8 @@ public class FragmentListaPensamientos extends SherlockListFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        // TODO Cuando se cambia de orientacion, el activity se vuelve a crear?
+
         pensamientos = getResources().getStringArray(R.array.pensamientos_emprendedores);
 
         setListAdapter(new ArrayAdapter<String>(getActivity(),
