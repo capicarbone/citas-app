@@ -11,8 +11,7 @@
                   android:layout_height="match_parent"
                   android:orientation="horizontal"
             >
-        <fragment android:id="@+id/lista_pensamientos"
-                  android:name="capicp.test.sherlockdrawer.FragmentListaPensamientos"
+        <FrameLayout android:id="@+id/listado"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                 />

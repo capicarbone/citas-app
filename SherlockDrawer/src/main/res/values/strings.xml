@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SherlockDrawer</string>
+    <string name="app_name">Citas</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="drawer_abierto">Opciones</string>
@@ -12,21 +12,13 @@
         <item>Escritores</item>
         <item>Líderes</item>
     </string-array>
-
     <string-array name="pensamientos_emprendedores">
-        <item>
-            Esto es un pensamiento emprendedor
-        </item>
-        <item>
-            Esto es otro pensamiento emprendedor
-        </item>
-        <item>
-            Un último pensamiento emprendedor
-        </item>
+        <item>            Esto es un pensamiento emprendedor</item>
+        <item>            Esto es otro pensamiento emprendedor</item>
+        <item>            Un último pensamiento emprendedor</item>
     </string-array>
 
-    <string name="texto_test">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.
-    </string>
+    <string name="texto_test">        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</string>
+    <string name="title_activity_pensamiento">Pensamiento</string>
 
 </resources>

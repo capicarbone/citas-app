@@ -11,15 +11,14 @@
                  android:layout_height="match_parent"
                  android:orientation="horizontal"
             >
-        <fragment android:id="@+id/lista_pensamientos"
-            android:name="capicp.test.sherlockdrawer.FragmentListaPensamientos"
+        <FrameLayout android:id="@+id/listado"
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
 
                   />
 
-        <FrameLayout android:id="@+id/pensamiento_detalle"
+        <FrameLayout android:id="@+id/detalle"
             android:layout_weight="3"
             android:layout_width="0px"
             android:layout_height="match_parent"/>

@@ -872,18 +872,19 @@ containing a value of this type.
         public static final int abs__textButton=0x7f070013;
         public static final int abs__title=0x7f07001b;
         public static final int abs__up=0x7f07000f;
-        public static final int action_settings=0x7f070039;
+        public static final int action_settings=0x7f07003a;
         public static final int contenido=0x7f070033;
+        public static final int detalle=0x7f070036;
         public static final int disableHome=0x7f070008;
         public static final int drawer_layout=0x7f070032;
         public static final int edit_query=0x7f070026;
         public static final int homeAsUp=0x7f070005;
         public static final int listMode=0x7f070001;
-        public static final int lista_pensamientos=0x7f070034;
+        public static final int listado=0x7f070034;
         public static final int nav_drawer=0x7f070035;
         public static final int normal=0x7f070000;
         public static final int pensamiento_cuerpo=0x7f070037;
-        public static final int pensamiento_detalle=0x7f070036;
+        public static final int pensamiento_preview=0x7f070039;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
         public static final int showTitle=0x7f070006;
@@ -918,13 +919,16 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_main=0x7f030015;
-        public static final int fragment_pensamiento=0x7f030016;
-        public static final int opcion_view=0x7f030017;
-        public static final int sherlock_spinner_dropdown_item=0x7f030018;
-        public static final int sherlock_spinner_item=0x7f030019;
+        public static final int activity_pensamiento=0x7f030016;
+        public static final int fragment_pensamiento=0x7f030017;
+        public static final int opcion_view=0x7f030018;
+        public static final int pensamiento_list_view=0x7f030019;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001a;
+        public static final int sherlock_spinner_item=0x7f03001b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
+        public static final int pensamiento=0x7f0c0001;
     }
     public static final class string {
         public static final int abs__action_bar_home_description=0x7f0a0000;
@@ -946,6 +950,7 @@ containing a value of this type.
         public static final int drawer_cerrado=0x7f0a0010;
         public static final int hello_world=0x7f0a0011;
         public static final int texto_test=0x7f0a0012;
+        public static final int title_activity_pensamiento=0x7f0a0013;
     }
     public static final class style {
         /** 

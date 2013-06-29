@@ -16,6 +16,10 @@ public class FragmentPensamiento extends SherlockFragment {
     private String pensamiento;
     private String autor;
 
+    public FragmentPensamiento(){
+        pensamiento = "Seleccione un pensamiento";
+    }
+
     public FragmentPensamiento(String mensaje) {
 
         pensamiento = mensaje;
