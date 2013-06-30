@@ -32,6 +32,8 @@
     <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
     <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <color name="default_color">#ffffff</color>
+    <color name="presionado_color">#4d90fe</color>
 
     <declare-styleable name="SherlockActionBar">
 

@@ -8,11 +8,11 @@
         >
 
     <TextView android:id="@+id/pensamiento_preview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Aqui va un pensamiento"
-            android:textSize="18dp"
-            android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Aqui va un pensamiento"
+              android:textSize="10dp"
+              android:padding="10dp"
             />
 
 </LinearLayout>

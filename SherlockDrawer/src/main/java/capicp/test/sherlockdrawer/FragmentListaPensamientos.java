@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -36,6 +37,8 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
 
     private static final String SELECCIONADO_KEY = "seleccionado";
     private static final String CITA_KEY = "cita";
+    private static final String AUTOR_KEY = "autor";
+    private static final String DESCRIPCION_AUTOR_KEY = "descripcion_autor";
 
     private List<Pensamiento> pensamientos;
     private boolean pantalla_compartida = false;
@@ -49,6 +52,9 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
 
         ArrayList<String> list_view_elementos = new ArrayList<String>();
 
+        getListView().setChoiceMode(AbsListView.CHOICE_MODE_SINGLE);
+        getListView().setBackgroundColor(getResources().getColor(R.color.default_color));
+
         mAdapter = new ArrayAdapter<String>(getActivity(),
                 R.layout.pensamiento_list_view, R.id.pensamiento_preview,
                 list_view_elementos);
@@ -58,15 +64,26 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
         View fragment_pensamiento = getActivity().findViewById(R.id.detalle);
         pantalla_compartida = fragment_pensamiento != null && fragment_pensamiento.getVisibility() == View.VISIBLE;
 
-        String cita = "Selecciona algún pensamiento de la lista";
+        Pensamiento p = null;
 
         if (savedInstanceState != null){
+
+            p = new Pensamiento();
+
             seleccionado = savedInstanceState.getInt(SELECCIONADO_KEY);
-            cita = savedInstanceState.getString(CITA_KEY);
+            p.setCita(savedInstanceState.getString(CITA_KEY));
+            p.setAutor_nombre(savedInstanceState.getString(AUTOR_KEY));
+            p.setAutor_descripcion(savedInstanceState.getString(DESCRIPCION_AUTOR_KEY));
+
         }
 
         if (pantalla_compartida){
-            FragmentPensamiento inicio = new FragmentPensamiento(cita);
+            FragmentPensamiento inicio;
+
+            if ( p == null )
+                inicio = new FragmentPensamiento("Selecciona algún pensamiento de la lista");
+            else
+                inicio = new FragmentPensamiento(p);
 
             FragmentTransaction ft = getSherlockActivity().getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.detalle, inicio);
@@ -75,13 +92,16 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
         }else{
             if (savedInstanceState != null ){
                 Intent intent = new Intent(getSherlockActivity(), PensamientoActivity.class);
-                intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, cita);
+                intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, p.getCita());
+                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, p.getAutor_nombre());
+                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, p.getAutor_descripcion());
                 startActivity(intent);
             }
 
         }
 
     }
+
 
     @Override
     public void onAttach(Activity activity) {
@@ -96,8 +116,10 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
+        if (pantalla_compartida)
+            v.setSelected(true);
+
         cambiar_pensamiento(position);
-        v.setSelected(true);
 
     }
 
@@ -111,8 +133,6 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
 
     @Override
     public void onLoadFinished(Loader<List<Pensamiento>> listLoader, List<Pensamiento> pensamientos) {
-
-        Log.d(_ID, "Ser finalizo la carga de datos con " + pensamientos.size());
 
         mAdapter.clear();
         for (Pensamiento pensamiento : pensamientos) {
@@ -134,21 +154,32 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putInt(SELECCIONADO_KEY, seleccionado);
-        outState.putString(CITA_KEY, pensamientos.get(seleccionado).getCita());
+        if (seleccionado != -1 ){
+
+            Pensamiento pensamiento = pensamientos.get(seleccionado);
+
+            outState.putInt(SELECCIONADO_KEY, seleccionado);
+            outState.putString(CITA_KEY, pensamiento.getCita());
+            outState.putString(AUTOR_KEY, pensamiento.getAutor_nombre());
+            outState.putString(DESCRIPCION_AUTOR_KEY, pensamiento.getAutor_descripcion());
+        }
+
     }
 
     private void cambiar_pensamiento(int pos){
 
         if (pantalla_compartida){
-            FragmentPensamiento inicio = new FragmentPensamiento(pensamientos.get(pos).getCita());
+            FragmentPensamiento inicio = new FragmentPensamiento(pensamientos.get(pos));
 
             FragmentTransaction ft = getSherlockActivity().getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.detalle, inicio);
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             ft.commit();
         }else{
             Intent intent = new Intent(getSherlockActivity(), PensamientoActivity.class);
             intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, pensamientos.get(pos).getCita());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, pensamientos.get(pos).getAutor_nombre());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, pensamientos.get(pos).getAutor_descripcion());
             startActivity(intent);
         }
 
