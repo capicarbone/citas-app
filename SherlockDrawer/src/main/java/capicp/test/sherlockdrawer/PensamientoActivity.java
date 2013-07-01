@@ -20,6 +20,7 @@ public class PensamientoActivity extends SherlockFragmentActivity {
     public static final String PENSAMIENTO_MENSAJE = "capicp.test.sherlockdrawer.PENSAMIENTO_MENSAJE";
     public static final String PENSAMIENTO_AUTOR = "capicp.test.sherlockdrawer.PENSAMIENTO_AUTOR";
     public static final String PENSAMIENTO_AUTOR_DESCRIPCION = "capicp.test.sherlockdrawer.PENSAMIENTO_AUTOR_DESCRIPCION";
+    public static final String PENSAMIENTO_AUTOR_FOTO = "capicp.test.sherlockdrawer.PENSAMIENTO_AUTOR_FOTO";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class PensamientoActivity extends SherlockFragmentActivity {
             pensamiento.setCita(i.getStringExtra(PENSAMIENTO_MENSAJE));
             pensamiento.setAutor_descripcion(i.getStringExtra(PENSAMIENTO_AUTOR_DESCRIPCION));
             pensamiento.setAutor_nombre(i.getStringExtra(PENSAMIENTO_AUTOR));
+            pensamiento.setAutor_foto(i.getStringExtra(PENSAMIENTO_AUTOR_FOTO));
 
             FragmentPensamiento pensamientoFr = new FragmentPensamiento(pensamiento);
 

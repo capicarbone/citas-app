@@ -830,11 +830,16 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
-        public static final int drawer_shadow=0x7f020070;
-        public static final int ic_drawer=0x7f020071;
-        public static final int ic_launcher=0x7f020072;
-        public static final int seleccionado=0x7f020073;
-        public static final int steve=0x7f020074;
+        public static final int dorsey=0x7f020070;
+        public static final int drawer_shadow=0x7f020071;
+        public static final int ford=0x7f020072;
+        public static final int gates=0x7f020073;
+        public static final int ic_drawer=0x7f020074;
+        public static final int ic_launcher=0x7f020075;
+        public static final int jobs=0x7f020076;
+        public static final int seleccionado=0x7f020077;
+        public static final int steve=0x7f020078;
+        public static final int zuckerberg=0x7f020079;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070020;
@@ -876,8 +881,9 @@ containing a value of this type.
         public static final int abs__textButton=0x7f070013;
         public static final int abs__title=0x7f07001b;
         public static final int abs__up=0x7f07000f;
-        public static final int action_settings=0x7f07003e;
+        public static final int action_settings=0x7f070040;
         public static final int autor=0x7f07003a;
+        public static final int autor_apellido=0x7f07003f;
         public static final int contenido=0x7f070033;
         public static final int descripcion_autor=0x7f07003b;
         public static final int detalle=0x7f070036;
@@ -885,6 +891,7 @@ containing a value of this type.
         public static final int drawer_layout=0x7f070032;
         public static final int edit_query=0x7f070026;
         public static final int foto=0x7f070038;
+        public static final int foto_list_view=0x7f07003d;
         public static final int homeAsUp=0x7f070005;
         public static final int listMode=0x7f070001;
         public static final int listado=0x7f070034;
@@ -892,7 +899,7 @@ containing a value of this type.
         public static final int normal=0x7f070000;
         public static final int pensamiento=0x7f070037;
         public static final int pensamiento_cuerpo=0x7f070039;
-        public static final int pensamiento_preview=0x7f07003d;
+        public static final int pensamiento_preview=0x7f07003e;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
         public static final int showTitle=0x7f070006;

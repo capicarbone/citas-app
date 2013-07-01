@@ -39,10 +39,11 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     private static final String CITA_KEY = "cita";
     private static final String AUTOR_KEY = "autor";
     private static final String DESCRIPCION_AUTOR_KEY = "descripcion_autor";
+    private static final String FOTO_AUTOR_KEY = "foto";
 
     private List<Pensamiento> pensamientos;
     private boolean pantalla_compartida = false;
-    private ArrayAdapter<String> mAdapter;
+    private PensamientosAdapter mAdapter;
     private int seleccionado = -1;
 
 
@@ -50,14 +51,12 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        ArrayList<String> list_view_elementos = new ArrayList<String>();
+        ArrayList<Pensamiento> list_view_elementos = new ArrayList<Pensamiento>();
 
         getListView().setChoiceMode(AbsListView.CHOICE_MODE_SINGLE);
         getListView().setBackgroundColor(getResources().getColor(R.color.default_color));
 
-        mAdapter = new ArrayAdapter<String>(getActivity(),
-                R.layout.pensamiento_list_view, R.id.pensamiento_preview,
-                list_view_elementos);
+        mAdapter = new PensamientosAdapter(getActivity(),list_view_elementos);
 
         setListAdapter(mAdapter);
 
@@ -74,6 +73,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
             p.setCita(savedInstanceState.getString(CITA_KEY));
             p.setAutor_nombre(savedInstanceState.getString(AUTOR_KEY));
             p.setAutor_descripcion(savedInstanceState.getString(DESCRIPCION_AUTOR_KEY));
+            p.setAutor_foto(savedInstanceState.getString(FOTO_AUTOR_KEY));
 
         }
 
@@ -95,6 +95,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
                 intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, p.getCita());
                 intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, p.getAutor_nombre());
                 intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, p.getAutor_descripcion());
+                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_FOTO, p.getAutor_foto());
                 startActivity(intent);
             }
 
@@ -136,7 +137,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
 
         mAdapter.clear();
         for (Pensamiento pensamiento : pensamientos) {
-            mAdapter.add(pensamiento.getCita().substring(0,25) + "...");
+            mAdapter.add(pensamiento);
         }
 
         mAdapter.notifyDataSetChanged();
@@ -162,6 +163,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
             outState.putString(CITA_KEY, pensamiento.getCita());
             outState.putString(AUTOR_KEY, pensamiento.getAutor_nombre());
             outState.putString(DESCRIPCION_AUTOR_KEY, pensamiento.getAutor_descripcion());
+            outState.putString(FOTO_AUTOR_KEY, pensamiento.getAutor_foto());
         }
 
     }
@@ -180,6 +182,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
             intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, pensamientos.get(pos).getCita());
             intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, pensamientos.get(pos).getAutor_nombre());
             intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, pensamientos.get(pos).getAutor_descripcion());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_FOTO, pensamientos.get(pos).getAutor_foto());
             startActivity(intent);
         }
 

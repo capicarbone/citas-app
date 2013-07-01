@@ -23,6 +23,8 @@ public class MainActivity extends DrawerActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        getSupportActionBar().setTitle("Emprendedores");
+
         if (savedInstanceState == null){
             FragmentListaPensamientos listado = new FragmentListaPensamientos();
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

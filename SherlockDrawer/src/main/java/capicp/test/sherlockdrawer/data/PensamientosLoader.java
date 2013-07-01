@@ -31,7 +31,7 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
         ArrayList<Pensamiento> pensamientos = new ArrayList<Pensamiento>();
         Pensamiento nuevo;
 
-        Cursor c = db.rawQuery("SELECT cita, nombre, descripcion FROM pensamientos, autores WHERE autores._id=autor_id", null);
+        Cursor c = db.rawQuery("SELECT cita, nombre, descripcion, foto FROM pensamientos, autores WHERE autores._id=autor_id", null);
 
         c.moveToFirst();
 
@@ -42,6 +42,7 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
             nuevo.setCita(c.getString(0));
             nuevo.setAutor_nombre(c.getString(1));
             nuevo.setAutor_descripcion(c.getString(2));
+            nuevo.setAutor_foto(c.getString(3));
 
             pensamientos.add(nuevo);
 

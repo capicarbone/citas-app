@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockFragment;
 
 import capicp.test.sherlockdrawer.data.Pensamiento;
+import capicp.test.sherlockdrawer.data.PensamientoBDHelper;
 
 /**
  * Created by capi on 22/06/13.
@@ -19,10 +20,10 @@ public class FragmentPensamiento extends SherlockFragment {
     private static final String PENSAMIENTO_KEY = "mensaje";
     private static final String AUTOR_KEY = "autor";
 
-
     private String mensaje;
     private String autor;
     private String autor_descripcion;
+    private String foto;
 
     public FragmentPensamiento(){
         mensaje = "Seleccione un penasdf";
@@ -38,6 +39,7 @@ public class FragmentPensamiento extends SherlockFragment {
         mensaje = pensamiento.getCita();
         autor = pensamiento.getAutor_nombre();
         autor_descripcion = pensamiento.getAutor_descripcion();
+        foto = pensamiento.getAutor_foto();
     }
 
     @Override
@@ -46,7 +48,7 @@ public class FragmentPensamiento extends SherlockFragment {
         View pensamiento_view = inflater.inflate(R.layout.fragment_pensamiento, container, false);
 
         TextView texto = (TextView) pensamiento_view.findViewById(R.id.pensamiento_cuerpo);
-        texto.setText(mensaje);
+        texto.setText("\""+mensaje+"\"");
 
         if (autor != null ){
             texto = (TextView) pensamiento_view.findViewById(R.id.autor);
@@ -58,9 +60,11 @@ public class FragmentPensamiento extends SherlockFragment {
             texto.setText(autor_descripcion);
         }
 
-        ImageView i = (ImageView) pensamiento_view.findViewById(R.id.foto);
-        i.setImageResource(R.drawable.steve);
-        i.setAdjustViewBounds(true);
+        if (foto != null) {
+            ImageView i = (ImageView) pensamiento_view.findViewById(R.id.foto);
+            i.setImageResource(PensamientoBDHelper.obtenerFoto(foto));
+            i.setAdjustViewBounds(true);
+        }
 
         return pensamiento_view;
 

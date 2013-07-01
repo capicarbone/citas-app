@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="presionado_color">#4d90fe</color>
+    <color name="presionado_color">#efefef</color>
     <color name="default_color">#ffffff</color>
 </resources>
