@@ -7,15 +7,11 @@
     <string name="drawer_abierto">Opciones</string>
     <string name="drawer_cerrado">Contenido</string>
 
-    <string-array name="opciones">
+    <string-array name="categorias">
+        <item>Todos</item>
         <item>Emprendedores</item>
         <item>Escritores</item>
         <item>Líderes</item>
-    </string-array>
-    <string-array name="pensamientos_emprendedores">
-        <item>            Esto es un pensamiento emprendedor</item>
-        <item>            Esto es otro pensamiento emprendedor</item>
-        <item>            Un último pensamiento emprendedor</item>
     </string-array>
 
     <string name="texto_test">        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</string>

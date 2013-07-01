@@ -30,7 +30,7 @@ public class DrawerActivity extends SherlockFragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        opciones = getResources().getStringArray(R.array.opciones);
+        opciones = getResources().getStringArray(R.array.categorias);
 
         mAdapter = new ArrayAdapter(this, R.layout.opcion_view, opciones );
 
@@ -52,13 +52,13 @@ public class DrawerActivity extends SherlockFragmentActivity {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
 
-                getSupportActionBar().setTitle("Opciones");
+                getSupportActionBar().setTitle("Categorias");
             }
 
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-                getSupportActionBar().setTitle(opciones[opcionesDrawer.getCheckedItemPosition()]);
+                getSupportActionBar().setTitle(opciones[opcionesDrawer.getSelectedItemPosition()]);
 
             }
         };
@@ -68,8 +68,11 @@ public class DrawerActivity extends SherlockFragmentActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        if ( savedInstanceState == null )
+        if ( savedInstanceState == null ){
             cambiarContenido(0);
+            getSupportActionBar().setTitle(opciones[0]);
+            opcionesDrawer.setSelection(0);
+        }
 
     }
 
@@ -109,6 +112,7 @@ public class DrawerActivity extends SherlockFragmentActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
             cambiarContenido(pos);
+            view.setSelected(true);
         }
     }
 }

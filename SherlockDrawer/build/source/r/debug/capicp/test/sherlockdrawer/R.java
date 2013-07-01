@@ -9,8 +9,7 @@ package capicp.test.sherlockdrawer;
 
 public final class R {
     public static final class array {
-        public static final int opciones=0x7f040000;
-        public static final int pensamientos_emprendedores=0x7f040001;
+        public static final int categorias=0x7f040000;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -691,12 +690,13 @@ containing a value of this type.
         public static final int abs__bright_foreground_disabled_holo_light=0x7f060003;
         public static final int abs__bright_foreground_holo_dark=0x7f060004;
         public static final int abs__bright_foreground_holo_light=0x7f060005;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f060008;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f060009;
-        public static final int abs__primary_text_holo_dark=0x7f06000a;
-        public static final int abs__primary_text_holo_light=0x7f06000b;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f060009;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f06000a;
+        public static final int abs__primary_text_holo_dark=0x7f06000b;
+        public static final int abs__primary_text_holo_light=0x7f06000c;
         public static final int default_color=0x7f060006;
-        public static final int presionado_color=0x7f060007;
+        public static final int drawer_background=0x7f060007;
+        public static final int presionado_color=0x7f060008;
     }
     public static final class dimen {
         public static final int abs__action_bar_default_height=0x7f080000;
@@ -831,15 +831,16 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
         public static final int dorsey=0x7f020070;
-        public static final int drawer_shadow=0x7f020071;
-        public static final int ford=0x7f020072;
-        public static final int gates=0x7f020073;
-        public static final int ic_drawer=0x7f020074;
-        public static final int ic_launcher=0x7f020075;
-        public static final int jobs=0x7f020076;
-        public static final int seleccionado=0x7f020077;
-        public static final int steve=0x7f020078;
-        public static final int zuckerberg=0x7f020079;
+        public static final int drawer_opcion=0x7f020071;
+        public static final int drawer_shadow=0x7f020072;
+        public static final int ford=0x7f020073;
+        public static final int gates=0x7f020074;
+        public static final int ic_drawer=0x7f020075;
+        public static final int ic_launcher=0x7f020076;
+        public static final int jobs=0x7f020077;
+        public static final int seleccionado=0x7f020078;
+        public static final int steve=0x7f020079;
+        public static final int zuckerberg=0x7f02007a;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070020;

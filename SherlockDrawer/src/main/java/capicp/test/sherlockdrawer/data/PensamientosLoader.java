@@ -16,9 +16,12 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
 
 
     List<Pensamiento> mPensamientos;
+    private int categoria;
 
-    public PensamientosLoader(Context ctx){
+    public PensamientosLoader(Context ctx, int categoria){
         super(ctx);
+
+        this.categoria = categoria;
 
     }
 
@@ -31,7 +34,14 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
         ArrayList<Pensamiento> pensamientos = new ArrayList<Pensamiento>();
         Pensamiento nuevo;
 
-        Cursor c = db.rawQuery("SELECT cita, nombre, descripcion, foto FROM pensamientos, autores WHERE autores._id=autor_id", null);
+        String query = "SELECT cita, nombre, descripcion, foto FROM pensamientos, autores WHERE autores._id=autor_id";
+
+        if (categoria != 0)
+            query += " AND categoria=" + categoria;
+
+        Cursor c = db.rawQuery(query, null);
+
+        Log.d("Loader", "El query ejecutado fue " + query);
 
         c.moveToFirst();
 

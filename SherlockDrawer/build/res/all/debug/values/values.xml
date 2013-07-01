@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string-array name="opciones">
+    <string-array name="categorias">
+        <item>Todos</item>
         <item>Emprendedores</item>
         <item>Escritores</item>
         <item>Líderes</item>
-    </string-array>
-    <string-array name="pensamientos_emprendedores">
-        <item>            Esto es un pensamiento emprendedor</item>
-        <item>            Esto es otro pensamiento emprendedor</item>
-        <item>            Un último pensamiento emprendedor</item>
     </string-array>
 
     <attr name="background" format="reference|color" />
@@ -33,6 +29,7 @@
     <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
     <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
     <color name="default_color">#ffffff</color>
+    <color name="drawer_background">#111111</color>
     <color name="presionado_color">#efefef</color>
 
     <declare-styleable name="SherlockActionBar">

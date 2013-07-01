@@ -25,6 +25,11 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
     public static final String AUTORES_COLUMNA_NOMBRE = "nombre";
     public static final String AUTORES_COLUMNA_DESCRIPCION = "descripcion";
     public static final String AUTORES_COLUMNA_FOTO = "foto";
+    public static final String AUTORES_COLUMNA_CATEGORIA = "categoria";
+
+    public static final int CATEGORIA_EMPRENDEDORES = 1;
+    public static final int CATEGORIA_LIDERES = 2;
+    public static final int CATEGORIA_ESCRITORES = 3;
 
     public static final String FOTO_JOBS = "steve";
     public static final String FOTO_JOBS_2 = "jobs";
@@ -44,7 +49,8 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
                 ID_COLUMNA + " INTEGER PRIMARY KEY, " +
                 AUTORES_COLUMNA_NOMBRE + " TEXT, " +
                 AUTORES_COLUMNA_DESCRIPCION + " TEXT, " +
-                AUTORES_COLUMNA_FOTO + " TEXT " +
+                AUTORES_COLUMNA_FOTO + " TEXT, " +
+                AUTORES_COLUMNA_CATEGORIA + " INTEGER " +
                 ");";
 
         String pensamientos_tabla_create = "CREATE TABLE " + PENSAMIENTOS_NOMBRE_TABLA + "( " +
@@ -64,6 +70,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(AUTORES_COLUMNA_NOMBRE, "Steve Jobs");
         content.put(AUTORES_COLUMNA_DESCRIPCION, "Fundador de Apple");
         content.put(AUTORES_COLUMNA_FOTO, FOTO_JOBS_2);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_EMPRENDEDORES);
 
         id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
 
@@ -97,6 +104,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(AUTORES_COLUMNA_NOMBRE, "Jack Dorsey");
         content.put(AUTORES_COLUMNA_DESCRIPCION, "Fundador de Twitter");
         content.put(AUTORES_COLUMNA_FOTO, FOTO_DORSEY);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_EMPRENDEDORES);
 
         id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
 
@@ -109,6 +117,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(AUTORES_COLUMNA_NOMBRE, "Mark Zuckerberg");
         content.put(AUTORES_COLUMNA_DESCRIPCION, "Fundador de Facebook");
         content.put(AUTORES_COLUMNA_FOTO, FOTO_ZUCKERBERG);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_EMPRENDEDORES);
 
         id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
 
@@ -131,6 +140,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(AUTORES_COLUMNA_NOMBRE, "Bill Gates");
         content.put(AUTORES_COLUMNA_DESCRIPCION, "Fundador de Microsoft");
         content.put(AUTORES_COLUMNA_FOTO, FOTO_GATES);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_EMPRENDEDORES);
 
         id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
 
@@ -158,6 +168,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(AUTORES_COLUMNA_NOMBRE, "Henry Ford");
         content.put(AUTORES_COLUMNA_DESCRIPCION, "Fundador de Ford Motors");
         content.put(AUTORES_COLUMNA_FOTO, FOTO_FORD);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_EMPRENDEDORES);
 
         id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
 

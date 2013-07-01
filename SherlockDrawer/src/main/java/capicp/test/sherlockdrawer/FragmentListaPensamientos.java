@@ -40,11 +40,17 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     private static final String AUTOR_KEY = "autor";
     private static final String DESCRIPCION_AUTOR_KEY = "descripcion_autor";
     private static final String FOTO_AUTOR_KEY = "foto";
+    private static final String CATEGORIA_KEY = "categoria";
 
     private List<Pensamiento> pensamientos;
     private boolean pantalla_compartida = false;
     private PensamientosAdapter mAdapter;
     private int seleccionado = -1;
+    private int categoria = 0;
+
+    public FragmentListaPensamientos(int categoria){
+        this.categoria = categoria;
+    }
 
 
     @Override
@@ -108,8 +114,12 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
+        Bundle b = new Bundle();
+        b.putInt(CATEGORIA_KEY, this.categoria);
+
         LoaderManager lm = getLoaderManager();
-        lm.initLoader(PENSAMIENTOS_LOADER_ID, null, this).forceLoad();
+
+        lm.initLoader(PENSAMIENTOS_LOADER_ID, b, this).forceLoad();
 
     }
 
@@ -125,15 +135,17 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     }
 
     @Override
-    public Loader<List<Pensamiento>> onCreateLoader(int i, Bundle bundle) {
+    public Loader<List<Pensamiento>> onCreateLoader(int i, Bundle b) {
 
         Log.d(_ID, "Se creo el Loader");
 
-        return (Loader<List<Pensamiento>>) new PensamientosLoader(getActivity());
+        return (Loader<List<Pensamiento>>) new PensamientosLoader(getActivity(), b.getInt(CATEGORIA_KEY));
     }
 
     @Override
     public void onLoadFinished(Loader<List<Pensamiento>> listLoader, List<Pensamiento> pensamientos) {
+
+        Log.d(_ID, "Se recibieron pensamiento " + pensamientos.size());
 
         mAdapter.clear();
         for (Pensamiento pensamiento : pensamientos) {
