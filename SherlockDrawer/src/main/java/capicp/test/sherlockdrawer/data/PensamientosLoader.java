@@ -34,7 +34,7 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
         ArrayList<Pensamiento> pensamientos = new ArrayList<Pensamiento>();
         Pensamiento nuevo;
 
-        String query = "SELECT cita, nombre, descripcion, foto FROM pensamientos, autores WHERE autores._id=autor_id";
+        String query = "SELECT cita, nombre, descripcion, foto, pensamientos._id FROM pensamientos, autores WHERE autores._id=autor_id";
 
         if (categoria != 0)
             query += " AND categoria=" + categoria;
@@ -53,6 +53,7 @@ public class PensamientosLoader extends AsyncTaskLoader<List<Pensamiento>> {
             nuevo.setAutor_nombre(c.getString(1));
             nuevo.setAutor_descripcion(c.getString(2));
             nuevo.setAutor_foto(c.getString(3));
+            nuevo.setId(c.getLong(4));
 
             pensamientos.add(nuevo);
 

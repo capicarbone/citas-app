@@ -838,9 +838,10 @@ containing a value of this type.
         public static final int ic_drawer=0x7f020075;
         public static final int ic_launcher=0x7f020076;
         public static final int jobs=0x7f020077;
-        public static final int seleccionado=0x7f020078;
-        public static final int steve=0x7f020079;
-        public static final int zuckerberg=0x7f02007a;
+        public static final int mandela=0x7f020078;
+        public static final int seleccionado=0x7f020079;
+        public static final int steve=0x7f02007a;
+        public static final int zuckerberg=0x7f02007b;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070020;

@@ -46,10 +46,21 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     private boolean pantalla_compartida = false;
     private PensamientosAdapter mAdapter;
     private int seleccionado = -1;
+
     private int categoria = 0;
+    private long id_pensamiento  = -1;
+
+    public FragmentListaPensamientos(){
+        this.categoria = 0;
+    }
 
     public FragmentListaPensamientos(int categoria){
         this.categoria = categoria;
+    }
+
+    public FragmentListaPensamientos(int categoria, long id_pensamiento){
+        this.categoria = categoria;
+        this.id_pensamiento = id_pensamiento;
     }
 
 

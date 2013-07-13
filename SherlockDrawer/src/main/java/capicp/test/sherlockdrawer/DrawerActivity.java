@@ -2,6 +2,7 @@ package capicp.test.sherlockdrawer;
 
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
@@ -58,7 +59,13 @@ public class DrawerActivity extends SherlockFragmentActivity {
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-                getSupportActionBar().setTitle(opciones[opcionesDrawer.getSelectedItemPosition()]);
+
+                int i = opcionesDrawer.getCheckedItemPosition();
+
+                if (i != ListView.INVALID_POSITION)
+                    getSupportActionBar().setTitle(opciones[i]);
+                else
+                    getSupportActionBar().setTitle("Todos");
 
             }
         };
@@ -103,7 +110,12 @@ public class DrawerActivity extends SherlockFragmentActivity {
 
     private void cambiarContenido(int seleccionado){
 
-
+        if (seleccionado >= 0){
+            FragmentListaPensamientos fr = new FragmentListaPensamientos(seleccionado);
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.listado, fr);
+            ft.commit();
+        }
 
     }
 
@@ -111,8 +123,9 @@ public class DrawerActivity extends SherlockFragmentActivity {
 
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
-            cambiarContenido(pos);
             view.setSelected(true);
+            mDrawerLayout.closeDrawer(opcionesDrawer);
+            cambiarContenido(pos);
         }
     }
 }

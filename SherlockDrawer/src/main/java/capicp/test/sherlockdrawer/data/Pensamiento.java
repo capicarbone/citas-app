@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class Pensamiento implements Serializable{
 
+    private long id;
     private String cita;
     private String autor_nombre;
     private String autor_descripcion;
@@ -42,5 +43,17 @@ public class Pensamiento implements Serializable{
 
     public void setAutor_foto(String autor_foto) {
         this.autor_foto = autor_foto;
+    }
+
+    public String toString(){
+        return "La cita es: " + getCita();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

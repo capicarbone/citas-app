@@ -28,8 +28,8 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
     public static final String AUTORES_COLUMNA_CATEGORIA = "categoria";
 
     public static final int CATEGORIA_EMPRENDEDORES = 1;
-    public static final int CATEGORIA_LIDERES = 2;
-    public static final int CATEGORIA_ESCRITORES = 3;
+    public static final int CATEGORIA_LIDERES = 3;
+    public static final int CATEGORIA_ESCRITORES = 2;
 
     public static final String FOTO_JOBS = "steve";
     public static final String FOTO_JOBS_2 = "jobs";
@@ -37,6 +37,7 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
     public static final String FOTO_ZUCKERBERG = "zuckerberg";
     public static final String FOTO_GATES = "gates";
     public static final String FOTO_FORD = "ford";
+    public static final String FOTO_MANDELA = "mandela";
 
     public PensamientoBDHelper(Context context) {
         super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
@@ -207,6 +208,34 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
         content.put(PENSAMIENTOS_COLUMNA_CITA, "Si hay un secreto del éxito, reside en la capacidad para apreciar el punto de vista del prójimo y ver las cosas desde ese punto de vista así como del propio.");
         db.insert(PENSAMIENTOS_NOMBRE_TABLA, null, content);
 
+        content.clear();
+        content.put(AUTORES_COLUMNA_NOMBRE, "Nelson Mandela");
+        content.put(AUTORES_COLUMNA_DESCRIPCION, "Presidente de Sudáfrica y Premio Nobel de la Paz");
+        content.put(AUTORES_COLUMNA_FOTO, FOTO_MANDELA);
+        content.put(AUTORES_COLUMNA_CATEGORIA, CATEGORIA_LIDERES);
+
+        id_autor = db.insert(AUTORES_NOMBRE_TABLA, null, content);
+
+        content.clear();
+        content.put(PENSAMIENTOS_COLUMNA_AUTOR, id_autor);
+        content.put(PENSAMIENTOS_COLUMNA_CITA, "Después de escalar una montaña muy alta, descubrimos que hay muchas otras montañas por escalar.");
+        db.insert(PENSAMIENTOS_NOMBRE_TABLA, null, content);
+
+        content.clear();
+        content.put(PENSAMIENTOS_COLUMNA_AUTOR, id_autor);
+        content.put(PENSAMIENTOS_COLUMNA_CITA, "Si quieres hacer la paz con tu enemigo tienes que trabajar con él. Entonces se convierte en tu compañero.");
+        db.insert(PENSAMIENTOS_NOMBRE_TABLA, null, content);
+
+        content.clear();
+        content.put(PENSAMIENTOS_COLUMNA_AUTOR, id_autor);
+        content.put(PENSAMIENTOS_COLUMNA_CITA, "La mayor gloria no es nunca caer, sino levantarse siempre.");
+        db.insert(PENSAMIENTOS_NOMBRE_TABLA, null, content);
+
+        content.clear();
+        content.put(PENSAMIENTOS_COLUMNA_AUTOR, id_autor);
+        content.put(PENSAMIENTOS_COLUMNA_CITA, "Nadie nace odiando a otra persona por el color de su piel, o su origen, o su religión.");
+        db.insert(PENSAMIENTOS_NOMBRE_TABLA, null, content);
+
     }
 
     @Override
@@ -242,6 +271,9 @@ public class PensamientoBDHelper extends SQLiteOpenHelper {
 
         if (FOTO_FORD.equals(nombre))
             return R.drawable.ford;
+
+        if (FOTO_MANDELA.equals(nombre))
+            return R.drawable.mandela;
 
          return R.drawable.steve;
     }
