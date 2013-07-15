@@ -24,11 +24,11 @@
         <activity
             android:name="capicp.test.sherlockdrawer.PensamientoActivity"
             android:label="@string/title_activity_pensamiento"
-            android:parentActivityName="capicp.test.sherlockdrawer.MainActivity"
+            android:parentActivityName="capicp.test.sherlockdrawer.PrincipalActivity"
                 >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="capicp.test.sherlockdrawer.MainActivity"
+                android:value="capicp.test.sherlockdrawer.PrincipalActivity"
                 />
         </activity>
         <service android:name=".tasks.PensamientoServicio">

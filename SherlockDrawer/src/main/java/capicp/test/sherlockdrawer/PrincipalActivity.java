@@ -33,7 +33,7 @@ public class PrincipalActivity extends DrawerActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        FragmentListaPensamientos listado = null;
+        FragmentListaPensamientos listado = new FragmentListaPensamientos();
         Intent i = getIntent();
 
         int categoria;
@@ -42,19 +42,10 @@ public class PrincipalActivity extends DrawerActivity {
         categoria = i.getIntExtra(CATEGORIA_KEY, -1);
         pensamiento_id = i.getLongExtra(PENSAMIENTO_ID_KEY, -1);
 
-        if ( categoria == -1 ){
 
-            if (savedInstanceState == null){
-                listado = new FragmentListaPensamientos(0);
-            }
+        if (categoria != -1)
+            listado = new FragmentListaPensamientos(categoria, pensamiento_id);
 
-            Log.d("Principal", "Entro aquí");
-
-        }else{
-            if (pensamiento_id != -1)
-                listado = new FragmentListaPensamientos(categoria, pensamiento_id);
-
-        }
 
         Log.d("Principal", "Llegó aquí");
 

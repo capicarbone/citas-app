@@ -35,12 +35,15 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
     private static final String _ID = "FragmentListaPensamientos";
     private static final int PENSAMIENTOS_LOADER_ID = 256;
 
-    private static final String SELECCIONADO_KEY = "seleccionado";
     private static final String CITA_KEY = "cita";
     private static final String AUTOR_KEY = "autor";
     private static final String DESCRIPCION_AUTOR_KEY = "descripcion_autor";
     private static final String FOTO_AUTOR_KEY = "foto";
+
     private static final String CATEGORIA_KEY = "categoria";
+    private static final String SELECCIONADO_KEY = "seleccionado";
+    private static final String PENSAMIENTO_KEY = "pensamiento";
+
 
     private List<Pensamiento> pensamientos;
     private boolean pantalla_compartida = false;
@@ -69,6 +72,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
         super.onActivityCreated(savedInstanceState);
 
         ArrayList<Pensamiento> list_view_elementos = new ArrayList<Pensamiento>();
+        Pensamiento ps = null;
 
         getListView().setChoiceMode(AbsListView.CHOICE_MODE_SINGLE);
         getListView().setBackgroundColor(getResources().getColor(R.color.default_color));
@@ -80,40 +84,14 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
         View fragment_pensamiento = getActivity().findViewById(R.id.detalle);
         pantalla_compartida = fragment_pensamiento != null && fragment_pensamiento.getVisibility() == View.VISIBLE;
 
-        Pensamiento p = null;
-
         if (savedInstanceState != null){
 
-            p = new Pensamiento();
-
+            categoria = savedInstanceState.getInt(CATEGORIA_KEY);
             seleccionado = savedInstanceState.getInt(SELECCIONADO_KEY);
-            p.setCita(savedInstanceState.getString(CITA_KEY));
-            p.setAutor_nombre(savedInstanceState.getString(AUTOR_KEY));
-            p.setAutor_descripcion(savedInstanceState.getString(DESCRIPCION_AUTOR_KEY));
-            p.setAutor_foto(savedInstanceState.getString(FOTO_AUTOR_KEY));
+            ps = savedInstanceState.getParcelable(PENSAMIENTO_KEY);
 
-        }
-
-        if (pantalla_compartida){
-            FragmentPensamiento inicio;
-
-            if ( p == null )
-                inicio = new FragmentPensamiento("Selecciona algún pensamiento de la lista");
-            else
-                inicio = new FragmentPensamiento(p);
-
-            FragmentTransaction ft = getSherlockActivity().getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.detalle, inicio);
-            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            ft.commit();
-        }else{
-            if (savedInstanceState != null ){
-                Intent intent = new Intent(getSherlockActivity(), PensamientoActivity.class);
-                intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, p.getCita());
-                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, p.getAutor_nombre());
-                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, p.getAutor_descripcion());
-                intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_FOTO, p.getAutor_foto());
-                startActivity(intent);
+            if (ps != null ){
+                cambiar_pensamiento(-1, ps);
             }
 
         }
@@ -141,7 +119,7 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
         if (pantalla_compartida)
             v.setSelected(true);
 
-        cambiar_pensamiento(position);
+        cambiar_pensamiento(position, null);
 
     }
 
@@ -183,18 +161,28 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
             Pensamiento pensamiento = pensamientos.get(seleccionado);
 
             outState.putInt(SELECCIONADO_KEY, seleccionado);
-            outState.putString(CITA_KEY, pensamiento.getCita());
-            outState.putString(AUTOR_KEY, pensamiento.getAutor_nombre());
-            outState.putString(DESCRIPCION_AUTOR_KEY, pensamiento.getAutor_descripcion());
-            outState.putString(FOTO_AUTOR_KEY, pensamiento.getAutor_foto());
+            outState.putInt(CATEGORIA_KEY, categoria);
+            outState.putParcelable(PENSAMIENTO_KEY, pensamiento);
+
+            pensamiento = outState.getParcelable(PENSAMIENTO_KEY);
+
         }
 
     }
 
-    private void cambiar_pensamiento(int pos){
+    private void cambiar_pensamiento(int pos, Pensamiento p){
+
+        Pensamiento pn = null;
+
+        if (pos != -1 )
+            pn = pensamientos.get(pos);
+
+        if ( p != null){
+            pn = p;
+        }
 
         if (pantalla_compartida){
-            FragmentPensamiento inicio = new FragmentPensamiento(pensamientos.get(pos));
+            FragmentPensamiento inicio = new FragmentPensamiento(pn);
 
             FragmentTransaction ft = getSherlockActivity().getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.detalle, inicio);
@@ -202,10 +190,10 @@ public class FragmentListaPensamientos extends SherlockListFragment implements L
             ft.commit();
         }else{
             Intent intent = new Intent(getSherlockActivity(), PensamientoActivity.class);
-            intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, pensamientos.get(pos).getCita());
-            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, pensamientos.get(pos).getAutor_nombre());
-            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, pensamientos.get(pos).getAutor_descripcion());
-            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_FOTO, pensamientos.get(pos).getAutor_foto());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_MENSAJE, pn.getCita());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR, pn.getAutor_nombre());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_DESCRIPCION, pn.getAutor_descripcion());
+            intent.putExtra(PensamientoActivity.PENSAMIENTO_AUTOR_FOTO, pn.getAutor_foto());
             startActivity(intent);
         }
 

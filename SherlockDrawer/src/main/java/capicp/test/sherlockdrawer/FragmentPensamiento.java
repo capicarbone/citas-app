@@ -42,10 +42,7 @@ public class FragmentPensamiento extends SherlockFragment {
         foto = pensamiento.getAutor_foto();
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        View pensamiento_view = inflater.inflate(R.layout.fragment_pensamiento, container, false);
+    public void colocar_pensamiento(Pensamiento p, View pensamiento_view){
 
         TextView texto = (TextView) pensamiento_view.findViewById(R.id.pensamiento_cuerpo);
         texto.setText("\""+mensaje+"\"");
@@ -65,6 +62,20 @@ public class FragmentPensamiento extends SherlockFragment {
             i.setImageResource(PensamientoBDHelper.obtenerFoto(foto));
             i.setAdjustViewBounds(true);
         }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View pensamiento_view = inflater.inflate(R.layout.fragment_pensamiento, container, false);
+
+        Pensamiento p = new Pensamiento();
+        p.setAutor_foto(foto);
+        p.setCita(mensaje);
+        p.setAutor_descripcion(autor_descripcion);
+        p.setAutor_nombre(autor);
+
+        colocar_pensamiento(p, pensamiento_view);
 
         return pensamiento_view;
 

@@ -1,17 +1,28 @@
 package capicp.test.sherlockdrawer.data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.io.Serializable;
 
 /**
  * Created by capi on 28/06/13.
  */
-public class Pensamiento implements Serializable{
+public class Pensamiento implements Parcelable{
 
     private long id;
     private String cita;
     private String autor_nombre;
     private String autor_descripcion;
     private String autor_foto;
+
+    public Pensamiento(){
+
+    }
+
+    public Pensamiento(Parcel in){
+        readFromParcel(in);
+    }
 
     public String getCita() {
         return cita;
@@ -55,5 +66,27 @@ public class Pensamiento implements Serializable{
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int i) {
+        dest.writeLong(id);
+        dest.writeString(cita);
+        dest.writeString(autor_nombre);
+        dest.writeString(autor_descripcion);
+        dest.writeString(autor_foto);
+    }
+
+    public void readFromParcel(Parcel in){
+        id = in.readLong();
+        cita = in.readString();
+        autor_nombre = in.readString();
+        autor_descripcion = in.readString();
+        autor_foto = in.readString();
     }
 }

@@ -13,22 +13,19 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="sherlockdrawer" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="FragmentLista" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1671b2d-7d7d-486b-97d4-8aa3398ccf22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/res/drawable-hdpi/mandela.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoServicio.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/MainActivity.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/DrawerActivity.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/DrawerActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientoBDHelper.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientoBDHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientosLoader.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientosLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/build/source/r/debug/capicp/test/sherlockdrawer/R.java" afterPath="$PROJECT_DIR$/SherlockDrawer/build/source/r/debug/capicp/test/sherlockdrawer/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/SherlockDrawer/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java" afterPath="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActionBarSherlock/build.gradle" afterPath="$PROJECT_DIR$/ActionBarSherlock/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SherlockDrawer/build.gradle" afterPath="$PROJECT_DIR$/SherlockDrawer/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SherlockDrawer.iws" />
@@ -47,6 +44,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,7 +81,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -93,31 +90,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FragmentListaPensamientos.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FragmentListaPensamientos.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="45" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-0.6023891" vertical-offset="908" max-vertical-offset="2925">
+            <state line="92" column="29" selection-start="3236" selection-end="3236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrincipalActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java">
+      <file leaf-file-name="FragmentPensamiento.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="41" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="840">
+            <state line="38" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PensamientoServicio.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoServicio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="60" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1170">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,19 +111,19 @@
       <file leaf-file-name="Pensamiento.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="21" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="975">
-              <folding />
+            <state line="19" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1470">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PensamientosLoader.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PensamientosLoader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientosLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="46" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1185">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="53" column="46" selection-start="1490" selection-end="1490" vertical-scroll-proportion="1.1023891" vertical-offset="44" max-vertical-offset="1080">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,6 +144,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -174,7 +161,7 @@
           <key>
             <ExternalProjectPojo>
               <option name="name" value="ActionBarSherlock" />
-              <option name="path" value="$PROJECT_DIR$/ActionBarSherlock/build.gradle" />
+              <option name="path" value="$PROJECT_DIR$/ActionBarSherlock" />
             </ExternalProjectPojo>
           </key>
           <value>
@@ -190,7 +177,7 @@
           <key>
             <ExternalProjectPojo>
               <option name="name" value="SherlockDrawerProject" />
-              <option name="path" value="$PROJECT_DIR$/build.gradle" />
+              <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
@@ -214,48 +201,53 @@
           <key>
             <ExternalProjectPojo>
               <option name="name" value="citas-app" />
-              <option name="path" value="$PROJECT_DIR$/build.gradle" />
+              <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
                 <option name="name" value="ActionBarSherlock" />
-                <option name="path" value="$PROJECT_DIR$/ActionBarSherlock/build.gradle" />
+                <option name="path" value="$PROJECT_DIR$/ActionBarSherlock" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="SherlockDrawer" />
-                <option name="path" value="$PROJECT_DIR$/SherlockDrawer/build.gradle" />
+                <option name="path" value="$PROJECT_DIR$/SherlockDrawer" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="citas-app" />
-                <option name="path" value="$PROJECT_DIR$/build.gradle" />
+                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
           </value>
         </entry>
       </map>
     </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1372523870975" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/res/layout/fragment_pensamiento.xml" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/res/drawable-hdpi/drawer_opcion.xml" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/res/layout/opcion_view.xml" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/DrawerActivity.java" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientoBDHelper.java" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoProgramado.java" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoServicio.java" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/MainActivity.java" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java" />
-        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java" />
         <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientosLoader.java" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/ActionBarSherlock/build.gradle" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/build.gradle" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java" />
+        <option value="$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java" />
       </list>
     </option>
   </component>
@@ -291,7 +283,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -368,161 +359,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SherlockDrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SherlockDrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout-land" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SherlockDrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SherlockDrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sherlockdrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="citas-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SherlockDrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sherlockdrawer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,6 +403,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -569,13 +411,11 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Androidv4" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="FA28EW400113" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -681,7 +521,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -712,6 +552,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -751,7 +596,11 @@
       <created>1372654480884</created>
       <updated>1372654480884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Corrección de error, inicio implementación de servicios y notificaciones.">
+      <created>1373695614493</created>
+      <updated>1373695614493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -784,24 +633,24 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.672" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27214685" sideWeight="0.4272" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3248" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5776" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980047" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2820717" sideWeight="0.4224" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2820717" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -809,13 +658,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28525898" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -874,7 +723,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio de implementación para soporte de categorias. Categorias en la base de datos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrección de error, inicio implementación de servicios y notificaciones." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -892,79 +741,12 @@
     <MESSAGE value="Mejoras en el Fragment para pensamientos mostrando imagen del autor, nombre y descripion. Solucionado detalles con cambio de orientacion. Agregado botón de atrás." />
     <MESSAGE value="Agregados pensamientos y acomodados detalles" />
     <MESSAGE value="Inicio de implementación para soporte de categorias. Categorias en la base de datos." />
+    <MESSAGE value="Corrección de error, inicio implementación de servicios y notificaciones." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/layout/pensamiento_list_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="57" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.7055749" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/layout/opcion_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.41811848" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="184" selection-end="184" vertical-scroll-proportion="0.10016695" vertical-offset="0" max-vertical-offset="599">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="720" selection-end="720" vertical-scroll-proportion="0.4006678" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/layout-land/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/DrawerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="78" selection-start="3476" selection-end="3476" vertical-scroll-proportion="2.5292153" vertical-offset="0" max-vertical-offset="1875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="90" selection-end="90" vertical-scroll-proportion="0.07679181" vertical-offset="0" max-vertical-offset="586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientoBDHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="52" selection-start="1236" selection-end="1236" vertical-scroll-proportion="-3.9948804" vertical-offset="2731" max-vertical-offset="4215">
@@ -979,30 +761,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoServicio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.85141903" vertical-offset="0" max-vertical-offset="675">
+        <state line="31" column="60" selection-start="958" selection-end="958" vertical-scroll-proportion="0.027303753" vertical-offset="449" max-vertical-offset="1170">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="55" selection-start="136" selection-end="136" vertical-scroll-proportion="0.12520868" vertical-offset="0" max-vertical-offset="599">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java">
+    <entry file="file://$PROJECT_DIR$/ActionBarSherlock/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="21" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="975">
+        <state line="5" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.12520868" vertical-offset="0" max-vertical-offset="599">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PensamientoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2233" selection-end="2233" vertical-scroll-proportion="1.1518772" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/res/layout-land/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="67" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.7512521" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/ActionBarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="0" selection-start="5518" selection-end="5518" vertical-scroll-proportion="-11.350584" vertical-offset="8284" max-vertical-offset="21045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActionBarSherlock/src/com/actionbarsherlock/ActionBarSherlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="602" column="0" selection-start="22694" selection-end="22694" vertical-scroll-proportion="0.87030715" vertical-offset="8115" max-vertical-offset="11670">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/PrincipalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="41" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="840">
+        <state line="51" column="27" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.72621036" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/tasks/PensamientoServicio.java">
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="60" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1170">
+        <state line="92" column="29" selection-start="3236" selection-end="3236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentPensamiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/Pensamiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1470">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1011,16 +861,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/data/PensamientosLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="46" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1185">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SherlockDrawer/src/main/java/capicp/test/sherlockdrawer/FragmentListaPensamientos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="45" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-0.6023891" vertical-offset="908" max-vertical-offset="2925">
+        <state line="53" column="46" selection-start="1490" selection-end="1490" vertical-scroll-proportion="1.1023891" vertical-offset="44" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
